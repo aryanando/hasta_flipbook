@@ -17,6 +17,9 @@ dependencies:
   flipbook-vue:
     specifier: 1.0.0-beta.4
     version: 1.0.0-beta.4(vue@3.4.21)
+  pnpm:
+    specifier: ^8.15.7
+    version: 8.15.7
   vue:
     specifier: ^3.4.21
     version: 3.4.21
@@ -4794,6 +4797,12 @@ packages:
     dependencies:
       find-up: 4.1.0
     dev: true
+
+  /pnpm@8.15.7:
+    resolution: {integrity: sha512-yFzSG22hAzIVaxyiqnnAph7nrS6wRTuIqymSienoypPmCRIyslwHy/YfbfdxKNnISeXJrG5EhU29IRxJ86Z63A==}
+    engines: {node: '>=16.14'}
+    hasBin: true
+    dev: false
 
   /popper.js@1.16.1:
     resolution: {integrity: sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==}

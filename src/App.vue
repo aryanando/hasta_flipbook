@@ -1,4 +1,30 @@
+
 <template>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #3a3a3a;">
+        
+        <a class="navbar-brand" id="test" @click="changeImage(3)" href="#">FlipBook </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <!-- Bind the click event to call changeImage method with the corresponding menu item -->
+              <a class="nav-link" href="#" @click="changeImage(1)">Menu Item 1</a>
+            </li>
+            <li class="nav-item">
+              <!-- Bind the click event to call changeImage method with the corresponding menu item -->
+              <a class="nav-link" href="#" @click="changeImage(2)">Menu Item 2</a>
+            </li>
+          </ul>
+          <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+        </div>
+  
+    </nav>
+  </div>
+<!-- Flip -->
   <div id="app" :class="{ 'has-mouse': hasMouse }" @touchstart="hasMouse = false">
     <Flipbook class="flipbook" :pages="pages" :pagesHiRes="pagesHiRes" :startPage="pageNum" v-slot="flipbook"
       ref="flipbook" @flip-left-start="onFlipLeftStart" @flip-left-end="onFlipLeftEnd"
@@ -28,7 +54,6 @@ import RightIcon from 'vue-material-design-icons/ChevronRightCircle'
 import PlusIcon from 'vue-material-design-icons/PlusCircle'
 import MinusIcon from 'vue-material-design-icons/MinusCircle'
 import Flipbook from 'flipbook-vue'
-// import Ribbon from './Ribbon'
 
 export default {
   components: { Flipbook, LeftIcon, RightIcon, PlusIcon, MinusIcon },
@@ -61,6 +86,27 @@ export default {
       const n = parseInt(window.location.hash.slice(1), 10)
       if (isFinite(n)) this.pageNum = n
     },
+    // Method to change the image URLs based on the menu item clicked
+    changeImage(menuItem) {
+      switch (menuItem) {
+        case 1:
+          this.pages = [null,'images/menu1/1.jpg', 'images/menu1/2.jpg', 'images/menu1/3.jpg', 'images/menu1/4.jpg', 'images/menu1/5.jpg', 'images/menu1/6.jpg'];
+          this.pagesHiRes = [null,'images-large/menu1/1.jpg', 'images-large/menu1/2.jpg', 'images-large/menu1/3.jpg', 'images-large/menu1/4.jpg', 'images-large/menu1/6.jpg'];
+          break;
+        case 2:
+          this.pages = [null,'images/menu2/1.jpg', 'images/menu2/2.jpg', 'images/menu2/3.jpg', 'images/menu2/6.jpg'];
+          this.pagesHiRes = [null,'images-large/menu2/1.jpg', 'images-large/menu2/2.jpg', 'images-large/menu2/3.jpg', 'images-large/menu2/6.jpg'];
+          break;
+        case 3:
+          this.pages = [null,'images/1.jpg', 'images/2.jpg', 'images/3.jpg', 'images/4.jpg', 'images/5.jpg', 'images/6.jpg', 'images/7.jpg'];
+          this.pagesHiRes = [null,'images-large/1.jpg', 'images-large/2.jpg', 'images-large/3.jpg', 'images-large/4.jpg', 'images-large/6.jpg', 'images-large/7.jpg'];
+          break;
+        // Add cases for other menu items as needed
+        default:
+          // Default case if menu item is not recognized
+          break;
+      }
+    },
   },
   mounted() {
     window.addEventListener('keydown', (ev) => {
@@ -90,6 +136,7 @@ export default {
         'images-large/4.jpg',
         'images-large/5.jpg',
         'images-large/6.jpg',
+        'images-large/7.jpg',
       ]
     }, 1)
 
@@ -101,16 +148,17 @@ export default {
 
 <style>
 html,
-body {
-  margin: 0;
-  padding: 0;
-}
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+  }
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
+  min-height: 100vh; /* Use min-height instead of height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,6 +166,7 @@ body {
   color: #ccc;
   overflow: hidden;
 }
+
 
 a {
   color: inherit;
