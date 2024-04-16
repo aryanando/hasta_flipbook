@@ -101,9 +101,9 @@ export default {
           this.pages = [null,'images/1.jpg', 'images/2.jpg', 'images/3.jpg', 'images/4.jpg', 'images/5.jpg', 'images/6.jpg', 'images/7.jpg'];
           this.pagesHiRes = [null,'images-large/1.jpg', 'images-large/2.jpg', 'images-large/3.jpg', 'images-large/4.jpg', 'images-large/6.jpg', 'images-large/7.jpg'];
           break;
-        // Add cases for other menu items as needed
+        
         default:
-          // Default case if menu item is not recognized
+          
           break;
       }
     },
