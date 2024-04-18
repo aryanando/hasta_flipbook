@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #3a3a3a;">
         
-        <a class="navbar-brand" id="test" @click="changeImage(3)" href="#">FlipBook </a>
+        <a class="navbar-brand" id="test" @click="changeImage(3)" href="#">Dashboard </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -12,11 +12,19 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <!-- Bind the click event to call changeImage method with the corresponding menu item -->
-              <a class="nav-link" href="#" @click="changeImage(1)">Menu Item 1</a>
+              <a class="nav-link" href="#" @click="changeImage(1)">Unggulan</a>
             </li>
             <li class="nav-item">
               <!-- Bind the click event to call changeImage method with the corresponding menu item -->
-              <a class="nav-link" href="#" @click="changeImage(2)">Menu Item 2</a>
+              <a class="nav-link" href="#" @click="changeImage(2)">Jadwal</a>
+            </li>
+            <li class="nav-item">
+              <!-- Bind the click event to call changeImage method with the corresponding menu item -->
+              <button class="nav-link" href="#" @click="changeImage(4)">Kamar</button>
+            </li>
+            <li class="nav-item">
+              <!-- Bind the click event to call changeImage method with the corresponding menu item -->
+              <button class="nav-link" href="#" onclick="openFullscreen()">Menu Item 3</button>
             </li>
           </ul>
           <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
@@ -90,18 +98,99 @@ export default {
     changeImage(menuItem) {
       switch (menuItem) {
         case 1:
-          this.pages = [null,'images/menu1/1.jpg', 'images/menu1/2.jpg', 'images/menu1/3.jpg', 'images/menu1/4.jpg', 'images/menu1/5.jpg', 'images/menu1/6.jpg'];
-          this.pagesHiRes = [null,'images-large/menu1/1.jpg', 'images-large/menu1/2.jpg', 'images-large/menu1/3.jpg', 'images-large/menu1/4.jpg', 'images-large/menu1/6.jpg'];
+          // Unggulan
+          this.pages = [
+          null,
+            'cover/cover-640.png',
+            'Unggulan/BayiGratis-640.jpg', 
+            'Unggulan/hyperbaric-640.jpg', 
+            'Unggulan/PIRATA-640.jpg', 
+            'Unggulan/TES NARKOBA-640.jpg'
+          ];
+          this.pagesHiRes = [
+          null,
+            'cover/cover-1920.png',
+            'Unggulan/BayiGratis-1920.jpg', 
+            'Unggulan/hyperbaric-1920.jpg', 
+            'Unggulan/PIRATA-1920.jpg', 
+            'Unggulan/TES NARKOBA-1920.jpg'
+          ];
           break;
         case 2:
-          this.pages = [null,'images/menu2/1.jpg', 'images/menu2/2.jpg', 'images/menu2/3.jpg', 'images/menu2/6.jpg'];
-          this.pagesHiRes = [null,'images-large/menu2/1.jpg', 'images-large/menu2/2.jpg', 'images-large/menu2/3.jpg', 'images-large/menu2/6.jpg'];
+          // Jadwal
+          this.pages = [
+            null,
+            'Jadwal/cover jadwal-640.jpg',
+            'Jadwal/jadwal1-640.jpg', 
+            'Jadwal/jadwal2-640.jpg'
+          ];
+          this.pagesHiRes = [
+          null,
+            'Jadwal/cover jadwal-1920.jpg',
+            'Jadwal/jadwal1-1920.jpg', 
+            'Jadwal/jadwal2-1920.jpg',
+          ];
           break;
         case 3:
-          this.pages = [null,'images/1.jpg', 'images/2.jpg', 'images/3.jpg', 'images/4.jpg', 'images/5.jpg', 'images/6.jpg', 'images/7.jpg'];
-          this.pagesHiRes = [null,'images-large/1.jpg', 'images-large/2.jpg', 'images-large/3.jpg', 'images-large/4.jpg', 'images-large/6.jpg', 'images-large/7.jpg'];
+          // Tips
+          this.pages = [
+            null,
+            'cover/cover-640.png',
+            'Tips-tips/dbd1.png',
+            'Tips-tips/dbd2.png',
+            'Tips-tips/gerd1.png',
+            'Tips-tips/gerd2.png',
+            'Tips-tips/imunisasi1.png',
+            'Tips-tips/imunisasi2.png',
+            'Tips-tips/Stunting1.png',
+            'Tips-tips/Stunting2.png',
+            'Tips-tips/gerd1.png',
+            'Tips-tips/gerd2.png',
+            'Tips-tips/tipsginjal1.png',
+            'Tips-tips/tipsginjal2.png',
+            'Tips-tips/makan malam1.png',
+            'Tips-tips/makan malam2.png',
+          ];
+          this.pagesHiRes = [
+            null,
+            'cover/cover-1920.png',
+            'Tips-tips/dbd1.png',
+            'Tips-tips/dbd2.png',
+            'Tips-tips/gerd1.png',
+            'Tips-tips/gerd2.png',
+            'Tips-tips/imunisasi1.png',
+            'Tips-tips/imunisasi2.png',
+            'Tips-tips/Stunting1.png',
+            'Tips-tips/Stunting2.png',
+            'Tips-tips/gerd1.png',
+            'Tips-tips/gerd2.png',
+            'Tips-tips/tipsginjal1.png',
+            'Tips-tips/tipsginjal2.png',
+            'Tips-tips/makan malam1.png',
+            'Tips-tips/makan malam2.png',
+          ];
           break;
-        
+        case 4:
+          // Jadwal
+          this.pages = [
+            null,
+            'cover/cover-640.png',
+            'Kamar/vvip-640.png', 
+            'Kamar/vip-640.png',
+            'Kamar/kls1-640.png', 
+            'Kamar/kls2-640.png',
+            'Kamar/kls3-640.png'
+          ];
+          this.pagesHiRes = [
+          null,
+            'cover/cover-1920.png',
+            'Kamar/vvip-1920.png', 
+            'Kamar/vip-1920.png',
+            'Kamar/kls1-1920.png', 
+            'Kamar/kls2-1920.png',
+            'Kamar/kls3-1920.png'
+          ];
+          break;
         default:
           
           break;
@@ -118,25 +207,51 @@ export default {
 
     // Simulate asynchronous pages initialization
     setTimeout(() => {
+      // this.pages = [
+      //   null,
+      //   'images/1.jpg',
+      //   'images/2.jpg',
+      //   'images/3.jpg',
+      //   'images/4.jpg',
+      //   'images/5.jpg',
+      //   'images/6.jpg',
+      //   'images/7.jpg',
+      // ]
       this.pages = [
         null,
-        'images/1.jpg',
-        'images/2.jpg',
-        'images/3.jpg',
-        'images/4.jpg',
-        'images/5.jpg',
-        'images/6.jpg',
-        'images/7.jpg',
+        'cover/cover-640.png',
+        'Tips-tips/dbd1.png',
+        'Tips-tips/dbd2.png',
+        'Tips-tips/gerd1.png',
+        'Tips-tips/gerd2.png',
+        'Tips-tips/imunisasi1.png',
+        'Tips-tips/imunisasi2.png',
+        'Tips-tips/Stunting1.png',
+        'Tips-tips/Stunting2.png',
+        'Tips-tips/gerd1.png',
+        'Tips-tips/gerd2.png',
+        'Tips-tips/tipsginjal1.png',
+        'Tips-tips/tipsginjal2.png',
+        'Tips-tips/makan malam1.png',
+        'Tips-tips/makan malam2.png',
       ]
       this.pagesHiRes = [
         null,
-        'images-large/1.jpg',
-        'images-large/2.jpg',
-        'images-large/3.jpg',
-        'images-large/4.jpg',
-        'images-large/5.jpg',
-        'images-large/6.jpg',
-        'images-large/7.jpg',
+        'cover/cover-1920.png',
+        'Tips-tips/dbd1.png',
+        'Tips-tips/dbd2.png',
+        'Tips-tips/gerd1.png',
+        'Tips-tips/gerd2.png',
+        'Tips-tips/imunisasi1.png',
+        'Tips-tips/imunisasi2.png',
+        'Tips-tips/Stunting1.png',
+        'Tips-tips/Stunting2.png',
+        'Tips-tips/gerd1.png',
+        'Tips-tips/gerd2.png',
+        'Tips-tips/tipsginjal1.png',
+        'Tips-tips/tipsginjal2.png',
+        'Tips-tips/makan malam1.png',
+        'Tips-tips/makan malam2.png',
       ]
     }, 1)
 
