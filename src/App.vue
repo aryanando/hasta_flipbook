@@ -24,7 +24,8 @@
             </li>
             <li class="nav-item">
               <!-- Bind the click event to call changeImage method with the corresponding menu item -->
-              <button class="nav-link" href="#" onclick="openFullscreen()">Menu Item 3</button>
+              <!-- <button class="nav-link" href="#" onclick="openFullscreen()">Menu Item 3</button> -->
+              <button class="nav-link" href="#" @click="changeImage(5)">Hyperbaric</button>
             </li>
           </ul>
           <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
@@ -189,6 +190,25 @@ export default {
             'Kamar/kls1-1920.png', 
             'Kamar/kls2-1920.png',
             'Kamar/kls3-1920.png'
+          ];
+          break;
+          case 5:
+          // Hyperbaric
+          this.pages = [
+            null,
+            'Hyperbaric/coverhiperbarik-640.png',
+            'Hyperbaric/penjelasan-640.png', 
+            'Hyperbaric/prosedur-640.png',
+            'Hyperbaric/syarat-640.png', 
+            'Hyperbaric/tarif-640.png'
+          ];
+          this.pagesHiRes = [
+          null,
+            'Hyperbaric/coverhiperbarik-1920.png',
+            'Hyperbaric/penjelasan-1920.png', 
+            'Hyperbaric/prosedur-1920.png',
+            'Hyperbaric/syarat-1920.png', 
+            'Hyperbaric/tarif-1920.png'
           ];
           break;
         default:
