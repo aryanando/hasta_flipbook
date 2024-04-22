@@ -111,7 +111,7 @@ export default {
           this.pagesHiRes = [
           null,
             'E-Menu/cover/cover-1920.png',
-            'E-Menu/Unggulan/BayiGratis-1920.jpg', 
+            'E-Menu/Unggulan/bayi-1920.jpg', 
             'E-Menu/Unggulan/hyperbaric-1920.jpg', 
             'E-Menu/Unggulan/pirata-1920.jpg', 
             'E-Menu/Unggulan/narkoba-1920.jpg'
