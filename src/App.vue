@@ -102,113 +102,113 @@ export default {
           // Unggulan
           this.pages = [
           null,
-            'E-menu/cover/cover-640.png',
-            'E-menu/Unggulan/bayi-640.png', 
-            'E-menu/Unggulan/hyperbaric-640.png', 
-            'E-menu/Unggulan/pirata-640.png', 
-            'E-menu/Unggulan/narkoba-640.png'
+            'menu/cover/cover-640.png',
+            'menu/Unggulan/bayi-640.png', 
+            'menu/Unggulan/hyperbaric-640.png', 
+            'menu/Unggulan/pirata-640.png', 
+            'menu/Unggulan/narkoba-640.png'
           ];
           this.pagesHiRes = [
           null,
-            'E-menu/cover/cover-1920.png',
-            'E-menu/Unggulan/bayi-1920.jpg', 
-            'E-menu/Unggulan/hyperbaric-1920.jpg', 
-            'E-menu/Unggulan/pirata-1920.jpg', 
-            'E-menu/Unggulan/narkoba-1920.jpg'
+            'menu/cover/cover-1920.png',
+            'menu/Unggulan/bayi-1920.jpg', 
+            'menu/Unggulan/hyperbaric-1920.jpg', 
+            'menu/Unggulan/pirata-1920.jpg', 
+            'menu/Unggulan/narkoba-1920.jpg'
           ];
           break;
         case 2:
           // Jadwal
           this.pages = [
             null,
-            'E-menu/Jadwal/coverjw-640.png',
-            'E-menu/Jadwal/jw1-640.png', 
-            'E-menu/Jadwal/jw1-640.png'
+            'menu/Jadwal/coverjw-640.png',
+            'menu/Jadwal/jw1-640.png', 
+            'menu/Jadwal/jw1-640.png'
           ];
           this.pagesHiRes = [
           null,
-            'E-menu/Jadwal/coverjw-1920.png',
-            'E-menu/Jadwal/jw1-1920.png', 
-            'E-menu/Jadwal/jw2-1920.png',
+            'menu/Jadwal/coverjw-1920.png',
+            'menu/Jadwal/jw1-1920.png', 
+            'menu/Jadwal/jw2-1920.png',
           ];
           break;
         case 3:
           // Tips
           this.pages = [
             null,
-            'E-menu/Tips-tips/covertips-640.png',
-            'E-menu/Tips-tips/dbd-640.png',
-            'E-menu/Tips-tips/dbd2-640.png',
-            'E-menu/Tips-tips/gerd-640.png',
-            'E-menu/Tips-tips/gerd2-640.png',
-            'E-menu/Tips-tips/imunisasi-640.png',
-            'E-menu/Tips-tips/imunisasi2-640.png',
-            'E-menu/Tips-tips/Stunting-640.png',
-            'E-menu/Tips-tips/Stunting2-640.png',
-            'E-menu/Tips-tips/gerd-640.png',
-            'E-menu/Tips-tips/gerd2-640.png',
-            'E-menu/Tips-tips/tipsginjal-640.png',
-            'E-menu/Tips-tips/tipsginjal2-640.png',
-            'E-menu/Tips-tips/makan-640.png',
-            'E-menu/Tips-tips/makan2-640.png',
+            'menu/Tips-tips/covertips-640.png',
+            'menu/Tips-tips/dbd-640.png',
+            'menu/Tips-tips/dbd2-640.png',
+            'menu/Tips-tips/gerd-640.png',
+            'menu/Tips-tips/gerd2-640.png',
+            'menu/Tips-tips/imunisasi-640.png',
+            'menu/Tips-tips/imunisasi2-640.png',
+            'menu/Tips-tips/Stunting-640.png',
+            'menu/Tips-tips/Stunting2-640.png',
+            'menu/Tips-tips/gerd-640.png',
+            'menu/Tips-tips/gerd2-640.png',
+            'menu/Tips-tips/tipsginjal-640.png',
+            'menu/Tips-tips/tipsginjal2-640.png',
+            'menu/Tips-tips/makan-640.png',
+            'menu/Tips-tips/makan2-640.png',
           ];
           this.pagesHiRes = [
             null,
-            'E-menu/Tips-tips/covertips-1920.png',
-            'E-menu/Tips-tips/dbd-1920.png',
-            'E-menu/Tips-tips/dbd2-1920.png',
-            'E-menu/Tips-tips/gerd-1920.png',
-            'E-menu/Tips-tips/gerd2-1920.png',
-            'E-menu/Tips-tips/imunisasi-1920.png',
-            'E-menu/Tips-tips/imunisasi2-1920.png',
-            'E-menu/Tips-tips/Stunting-1920.png',
-            'E-menu/Tips-tips/Stunting2-1920.png',
-            'E-menu/Tips-tips/gerd-1920.png',
-            'E-menu/Tips-tips/gerd2-1920.png',
-            'E-menu/Tips-tips/tipsginjal-1920.png',
-            'E-menu/Tips-tips/tipsginjal2-1920.png',
-            'E-menu/Tips-tips/makan-1920.png',
-            'E-menu/Tips-tips/makan2-1920.png',
+            'menu/Tips-tips/covertips-1920.png',
+            'menu/Tips-tips/dbd-1920.png',
+            'menu/Tips-tips/dbd2-1920.png',
+            'menu/Tips-tips/gerd-1920.png',
+            'menu/Tips-tips/gerd2-1920.png',
+            'menu/Tips-tips/imunisasi-1920.png',
+            'menu/Tips-tips/imunisasi2-1920.png',
+            'menu/Tips-tips/Stunting-1920.png',
+            'menu/Tips-tips/Stunting2-1920.png',
+            'menu/Tips-tips/gerd-1920.png',
+            'menu/Tips-tips/gerd2-1920.png',
+            'menu/Tips-tips/tipsginjal-1920.png',
+            'menu/Tips-tips/tipsginjal2-1920.png',
+            'menu/Tips-tips/makan-1920.png',
+            'menu/Tips-tips/makan2-1920.png',
           ];
           break;
         case 4:
           // Jadwal
           this.pages = [
             null,
-            'E-menu/cover/cover-640.png',
-            'E-menu/Kamar/vvip-640.png', 
-            'E-menu/Kamar/vip-640.png',
-            'E-menu/Kamar/kls1-640.png', 
-            'E-menu/Kamar/kls2-640.png',
-            'E-menu/Kamar/kls3-640.png'
+            'menu/cover/cover-640.png',
+            'menu/Kamar/vvip-640.png', 
+            'menu/Kamar/vip-640.png',
+            'menu/Kamar/kls1-640.png', 
+            'menu/Kamar/kls2-640.png',
+            'menu/Kamar/kls3-640.png'
           ];
           this.pagesHiRes = [
           null,
-            'E-menu/cover/cover-1920.png',
-            'E-menu/Kamar/vvip-1920.png', 
-            'E-menu/Kamar/vip-1920.png',
-            'E-menu/Kamar/kls1-1920.png', 
-            'E-menu/Kamar/kls2-1920.png',
-            'E-menu/Kamar/kls3-1920.png'
+            'menu/cover/cover-1920.png',
+            'menu/Kamar/vvip-1920.png', 
+            'menu/Kamar/vip-1920.png',
+            'menu/Kamar/kls1-1920.png', 
+            'menu/Kamar/kls2-1920.png',
+            'menu/Kamar/kls3-1920.png'
           ];
           break;
           case 5:
           // Hyperbaric
           this.pages = [
             null,
-            'E-menu/Hyperbaric/coverhiperbarik-640.png',
-            'E-menu/Hyperbaric/penjelasan-640.png', 
-            'E-menu/Hyperbaric/prosedur-640.png',
-            'E-menu/Hyperbaric/syarat-640.png', 
-            'E-menu/Hyperbaric/tarif-640.png'
+            'menu/Hyperbaric/coverhiperbarik-640.png',
+            'menu/Hyperbaric/penjelasan-640.png', 
+            'menu/Hyperbaric/prosedur-640.png',
+            'menu/Hyperbaric/syarat-640.png', 
+            'menu/Hyperbaric/tarif-640.png'
           ];
           this.pagesHiRes = [
           null,
-            'E-menu/Hyperbaric/coverhiperbarik-1920.png',
-            'E-menu/Hyperbaric/penjelasan-1920.png', 
-            'E-menu/Hyperbaric/prosedur-1920.png',
-            'E-menu/Hyperbaric/syarat-1920.png', 
-            'E-menu/Hyperbaric/tarif-1920.png'
+            'menu/Hyperbaric/coverhiperbarik-1920.png',
+            'menu/Hyperbaric/penjelasan-1920.png', 
+            'menu/Hyperbaric/prosedur-1920.png',
+            'menu/Hyperbaric/syarat-1920.png', 
+            'menu/Hyperbaric/tarif-1920.png'
           ];
           break;
         default:
@@ -239,19 +239,19 @@ export default {
       // ]
       this.pages = [
         null,
-        'E-menu/cover/cover-640.png',
-        'E-menu/Unggulan/bayi-640.png', 
-        'E-menu/Unggulan/hyperbaric-640.png', 
-        'E-menu/Unggulan/pirata-640.png', 
-        'E-menu/Unggulan/narkoba-640.png'
+        'menu/cover/cover-640.png',
+        'menu/Unggulan/bayi-640.png', 
+        'menu/Unggulan/hyperbaric-640.png', 
+        'menu/Unggulan/pirata-640.png', 
+        'menu/Unggulan/narkoba-640.png'
       ]
       this.pagesHiRes = [
         null,
-        'E-menu/cover/cover-1920.png',
-        'E-menu/Unggulan/bayi-1920.jpg', 
-        'E-menu/Unggulan/hyperbaric-1920.jpg', 
-        'E-menu/Unggulan/pirata-1920.jpg', 
-        'E-menu/Unggulan/narkoba-1920.jpg'
+        'menu/cover/cover-1920.png',
+        'menu/Unggulan/bayi-1920.jpg', 
+        'menu/Unggulan/hyperbaric-1920.jpg', 
+        'menu/Unggulan/pirata-1920.jpg', 
+        'menu/Unggulan/narkoba-1920.jpg'
       ]
     }, 1)
 
