@@ -4,11 +4,10 @@
       <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #3a3a3a;">
         
         <a class="navbar-brand" id="test" @click="changeImage(1)" href="#">Dashboard </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" @click="toggleMenu" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div :class="['collapse', 'navbar-collapse', { 'show': isMenuOpen }]" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <!-- Bind the click event to call changeImage method with the corresponding menu item -->
@@ -72,6 +71,7 @@ export default {
       pagesHiRes: [],
       hasMouse: true,
       pageNum: null,
+      isMenuOpen: false
     }
   },
   methods: {
@@ -95,11 +95,15 @@ export default {
       const n = parseInt(window.location.hash.slice(1), 10)
       if (isFinite(n)) this.pageNum = n
     },
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    },
     // Method to change the image URLs based on the menu item clicked
     changeImage(menuItem) {
       switch (menuItem) {
         case 1:
           // Unggulan
+          this.pageNum = 1;
           this.pages = [
           null,
             'menu/cover/cover-640.png',
@@ -111,14 +115,15 @@ export default {
           this.pagesHiRes = [
           null,
             'menu/cover/cover-1920.png',
-            'menu/Unggulan/bayi-1920.jpg', 
-            'menu/Unggulan/hyperbaric-1920.jpg', 
-            'menu/Unggulan/pirata-1920.jpg', 
-            'menu/Unggulan/narkoba-1920.jpg'
+            'menu/Unggulan/bayi-1920.png', 
+            'menu/Unggulan/hyperbaric-1920.png', 
+            'menu/Unggulan/pirata-1920.png', 
+            'menu/Unggulan/narkoba-1920.png '
           ];
           break;
         case 2:
           // Jadwal
+          this.pageNum = 1;
           this.pages = [
             null,
             'menu/Jadwal/coverjw-640.png',
@@ -134,6 +139,7 @@ export default {
           break;
         case 3:
           // Tips
+          this.pageNum = 1;
           this.pages = [
             null,
             'menu/Tips-tips/covertips-640.png',
@@ -165,6 +171,7 @@ export default {
           break;
         case 4:
           // Jadwal
+          this.pageNum = 1;
           this.pages = [
             null,
             'menu/cover/cover-640.png',
@@ -186,6 +193,7 @@ export default {
           break;
           case 5:
           // Hyperbaric
+          this.pageNum = 1;
           this.pages = [
             null,
             'menu/Hyperbaric/coverhiperbarik-640.png',
@@ -240,10 +248,10 @@ export default {
       this.pagesHiRes = [
         null,
         'menu/cover/cover-1920.png',
-        'menu/Unggulan/bayi-1920.jpg', 
-        'menu/Unggulan/hyperbaric-1920.jpg', 
-        'menu/Unggulan/pirata-1920.jpg', 
-        'menu/Unggulan/narkoba-1920.jpg'
+        'menu/Unggulan/bayi-1920.png', 
+        'menu/Unggulan/hyperbaric-1920.png', 
+        'menu/Unggulan/pirata-1920.png', 
+        'menu/Unggulan/narkoba-1920.png'
       ]
     }, 1)
 
