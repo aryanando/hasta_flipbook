@@ -224,7 +224,6 @@
         if (ev.keyCode == 37 && flipbook.canFlipLeft) flipbook.flipLeft()
         if (ev.keyCode == 39 && flipbook.canFlipRight) flipbook.flipRight()
       })
-
       // Simulate asynchronous pages initialization
       setTimeout(() => {
         this.pages = [
