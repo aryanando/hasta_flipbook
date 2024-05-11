@@ -102,11 +102,11 @@
       changeImage(menuItem) {
         switch (menuItem) {
           case 1:
-            // Unggulan
+            // Unggulan Dashboard
             this.pageNum = 1;
             this.pages = [
             null,
-              'menu/cover/cover-640.png',
+              'menu/cover/hospital-tourism-640.png',
               'menu/Unggulan/bayi-640.png', 
               'menu/Unggulan/hyperbaric-640.png', 
               'menu/Unggulan/pirata-640.png', 
@@ -114,7 +114,7 @@
             ];
             this.pagesHiRes = [
             null,
-              'menu/cover/cover-1920.png',
+              'menu/cover/hospital-tourism-1920.png',
               'menu/Unggulan/bayi-1920.png', 
               'menu/Unggulan/hyperbaric-1920.png', 
               'menu/Unggulan/pirata-1920.png', 
@@ -174,7 +174,7 @@
             this.pageNum = 1;
             this.pages = [
               null,
-              'menu/cover/hospital-tourism-640.png',
+              'menu/Kamar/coverkamar-640.png',
               'menu/Kamar/vvip-640.png', 
               'menu/Kamar/vip-640.png',
               'menu/Kamar/kls1-640.png', 
@@ -183,7 +183,7 @@
             ];
             this.pagesHiRes = [
             null,
-              'menu/cover/hospital-tourism-1920.png',
+              'menu/Kamar/coverkamar-1920.png',
               'menu/Kamar/vvip-1920.png', 
               'menu/Kamar/vip-1920.png',
               'menu/Kamar/kls1-1920.png', 
