@@ -105,17 +105,17 @@
             this.pageNum = 1;
             this.pages = [
             null,
-              'menu/cover/hospital-tourism-640.png',
+              'menu/cover/hospi-640.png',
               'menu/Unggulan/bayi-640.png', 
-              'menu/Unggulan/hyperbaric-640.png', 
+              'menu/Unggulan/hyperbaric2-640.png', 
               'menu/Unggulan/pirata-640.png', 
               'menu/Unggulan/narkoba-640.png'
             ];
             this.pagesHiRes = [
             null,
-              'menu/cover/hospital-tourism-1920.png',
+              'menu/cover/hospi-1920.png',
               'menu/Unggulan/bayi-1920.png', 
-              'menu/Unggulan/hyperbaric-1920.png', 
+              'menu/Unggulan/hyperbaric2-1920.png', 
               'menu/Unggulan/pirata-1920.png', 
               'menu/Unggulan/narkoba-1920.png '
             ];
@@ -227,17 +227,17 @@
       setTimeout(() => {
         this.pages = [
           null,
-          'menu/cover/hospital-tourism-640.png',
+          'menu/cover/hospi-640.png',
           'menu/Unggulan/bayi-640.png', 
-          'menu/Unggulan/hyperbaric-640.png', 
+          'menu/Unggulan/hyperbaric2-640.png', 
           'menu/Unggulan/pirata-640.png', 
           'menu/Unggulan/narkoba-640.png'
         ]
         this.pagesHiRes = [
           null,
-          'menu/cover/hospital-tourism-1920.png',
+          'menu/cover/hospi-1920.png',
           'menu/Unggulan/bayi-1920.png', 
-          'menu/Unggulan/hyperbaric-1920.png', 
+          'menu/Unggulan/hyperbaric2-1920.png', 
           'menu/Unggulan/pirata-1920.png', 
           'menu/Unggulan/narkoba-1920.png'
         ]
