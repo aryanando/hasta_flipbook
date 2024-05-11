@@ -248,7 +248,6 @@
     },
   }
   </script>
-
   <style>
   html,
     body {
