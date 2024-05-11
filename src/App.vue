@@ -200,7 +200,7 @@
               'menu/Hyperbaric/penjelasan-640.png', 
               'menu/Hyperbaric/prosedur-640.png',
               'menu/Hyperbaric/syarat-640.png', 
-              'menu/Hyperbaric/tarif-640.png'
+              'menu/Hyperbaric/tarif1-640.png'
             ];
             this.pagesHiRes = [
             null,
@@ -208,7 +208,7 @@
               'menu/Hyperbaric/penjelasan-1920.png', 
               'menu/Hyperbaric/prosedur-1920.png',
               'menu/Hyperbaric/syarat-1920.png', 
-              'menu/Hyperbaric/tarif-1920.png'
+              'menu/Hyperbaric/tarif1-1920.png'
             ];
             break;
           default:
