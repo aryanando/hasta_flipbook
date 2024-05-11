@@ -243,7 +243,6 @@
           'menu/Unggulan/narkoba-1920.png'
         ]
       }, 1)
-
       window.addEventListener('hashchange', this.setPageFromHash)
       this.setPageFromHash()
     },
