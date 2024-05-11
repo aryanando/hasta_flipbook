@@ -54,7 +54,6 @@
       </p>
     </div>
   </template>
-
   <script>
   import 'vue-material-design-icons/styles.css'
   import LeftIcon from 'vue-material-design-icons/ChevronLeftCircle'
