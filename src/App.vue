@@ -266,8 +266,6 @@
     color: #ccc;
     overflow: hidden;
   }
-
-
   a {
     color: inherit;
   }
