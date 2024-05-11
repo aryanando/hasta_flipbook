@@ -255,7 +255,6 @@
       padding: 0;
       overflow: hidden; /* Prevent scrolling */
     }
-
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
