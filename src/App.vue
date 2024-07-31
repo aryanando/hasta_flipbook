@@ -10,21 +10,22 @@
           <div :class="['collapse', 'navbar-collapse', { 'show': isMenuOpen }]">
             <ul class="navbar-nav custom-nav">
               <li class="nav-item">
-                <!-- Bind the click event to call changeImage method with the corresponding menu item -->
                 <a class="nav-link" href="#" @click="changeImage(3)">Tips-Tips</a>
               </li>
               <li class="nav-item">
-                <!-- Bind the click event to call changeImage method with the corresponding menu item -->
                 <a class="nav-link" href="#" @click="changeImage(2)">Jadwal</a>
               </li>
               <li class="nav-item">
-                <!-- Bind the click event to call changeImage method with the corresponding menu item -->
                 <button class="nav-link" href="#" @click="changeImage(4)">Kamar</button>
               </li>
               <li class="nav-item">
-                <!-- Bind the click event to call changeImage method with the corresponding menu item -->
-                <!-- <button class="nav-link" href="#" onclick="openFullscreen()">Menu Item 3</button> -->
                 <button class="nav-link" href="#" @click="changeImage(5)">Hyperbaric</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" href="#" @click="changeImage(6)">Kertas Kinerja</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" href="#" @click="changeImage(7)">Bulletin</button>
               </li>
             </ul>
             <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
@@ -126,7 +127,7 @@
               null,
               'menu/Jadwal/coverjw-640.png',
               'menu/Jadwal/jw1-640.png', 
-              'menu/Jadwal/jw1-640.png'
+              'menu/Jadwal/jw2-640.png'
             ];
             this.pagesHiRes = [
             null,
@@ -207,6 +208,70 @@
               'menu/Hyperbaric/prosedur-1920.png',
               'menu/Hyperbaric/syarat-1920.png', 
               'menu/Hyperbaric/tarif1-1920.png'
+            ];
+            break;
+            case 6:
+            // Kertas Kinerja
+            this.pageNum = 1;
+            this.pages = [
+              null,
+              'menu/dipa/dipa-640.png',
+              'menu/dipa/1.jpg', 
+              'menu/dipa/2.jpg',
+              'menu/dipa/3.jpg', 
+              'menu/dipa/4.jpg',
+              'menu/dipa/5.jpg', 
+              'menu/dipa/6.jpg',
+              'menu/dipa/7.jpg', 
+              'menu/dipa/8.jpg',
+              'menu/dipa/9.jpg', 
+              'menu/dipa/10.jpg',
+            ];
+            this.pagesHiRes = [
+            null,
+              'menu/dipa/dipa-1920.png',
+              'menu/dipa/1.jpg', 
+              'menu/dipa/2.jpg',
+              'menu/dipa/3.jpg', 
+              'menu/dipa/4.jpg',
+              'menu/dipa/5.jpg', 
+              'menu/dipa/6.jpg',
+              'menu/dipa/7.jpg', 
+              'menu/dipa/8.jpg',
+              'menu/dipa/9.jpg', 
+              'menu/dipa/10.jpg'
+            ];
+            break;
+            case 7:
+            // Buletin
+            this.pageNum = 1;
+            this.pages = [
+              null,
+              'menu/Bulletin/cover buletin - 640.png',
+              'menu/Bulletin/Profil -640.png', 
+              'menu/Bulletin/Profil2 -640.png',
+              'menu/Bulletin/pemilu - 640.png', 
+              'menu/Bulletin/baktikes1-640.png',
+              'menu/Bulletin/baktikes2-640.png', 
+              'menu/Bulletin/baktikes3-640.png',
+              'menu/Bulletin/baktikes4-640.png',
+              'menu/Bulletin/layanan hyperbaric - 640.png', 
+              'menu/Bulletin/layanan pirata-640.png',
+              'menu/Bulletin/layanan perluasan - 640.png'
+            ];
+            this.pagesHiRes = [
+            null,
+              'menu/Bulletin/cover buletin - 1920.png',
+              'menu/Bulletin/Profil -1920.png', 
+              'menu/Bulletin/Profil2 -1920.png',
+              'menu/Bulletin/pemilu - 1920.png', 
+              'menu/Bulletin/baktikes1-1920.png',
+              'menu/Bulletin/baktikes2-1920.png', 
+              'menu/Bulletin/baktikes3-1920.png',
+              'menu/Bulletin/baktikes4-1920.png',
+              'menu/Bulletin/layanan hyperbaric - 1920.png', 
+              'menu/Bulletin/layanan pirata-1920.png',
+              'menu/Bulletin/layanan perluasan - 1920.png'
             ];
             break;
           default:
