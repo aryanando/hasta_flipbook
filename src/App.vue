@@ -268,7 +268,7 @@ export default {
           this.pageNum = 1;
           this.pages = [
             null,
-            "menu/dipa25/dipa-640.png",
+            "menu/dipa25/dipa25-640.png",
             "menu/dipa25/1.jpg",
             "menu/dipa25/2.jpg",
             "menu/dipa25/3.jpg",
@@ -282,7 +282,7 @@ export default {
           ];
           this.pagesHiRes = [
             null,
-            "menu/dipa/dipa-1920.png",
+            "menu/dipa25/dipa25-1920.png",
             "menu/dipa25/1.jpg",
             "menu/dipa25/2.jpg",
             "menu/dipa25/3.jpg",
