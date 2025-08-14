@@ -45,6 +45,11 @@
               Bulletin
             </button>
           </li>
+          <li class="nav-item">
+            <button class="nav-link btn-back" @click="goBack">
+              ← Back
+            </button>
+          </li>
         </ul>
         <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
       </div>
@@ -149,6 +154,10 @@ export default {
     },
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
+    },
+
+    goBack() {
+      window.location.href = "http://172.16.1.251:8010";
     },
 
     // Method to change the image URLs based on the menu item clicked
@@ -501,5 +510,18 @@ a {
 }
 .custom-nav {
   margin-left: 20px;
+}
+
+.btn-back {
+  background-color: #dc3545 !important;
+  border: 1px solid #dc3545 !important;
+  border-radius: 4px !important;
+  margin-left: 10px !important;
+  padding: 5px 10px !important;
+}
+
+.btn-back:hover {
+  background-color: #c82333 !important;
+  border-color: #bd2130 !important;
 }
 </style>
