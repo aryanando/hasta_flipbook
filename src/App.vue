@@ -119,6 +119,7 @@ export default {
       hasMouse: true,
       pageNum: null,
       isMenuOpen: false,
+      inactivityTimeout: null,
     };
   },
   methods: {
@@ -386,16 +387,37 @@ export default {
     }, 1);
     window.addEventListener("hashchange", this.setPageFromHash);
     this.setPageFromHash();
+    
     // Initialize inactivity timeout
     this.startRedirectTimeout();
+    
+    // Add comprehensive event listeners for user interactions
     window.addEventListener("mousemove", this.resetRedirectTimeout);
+    window.addEventListener("mousedown", this.resetRedirectTimeout);
+    window.addEventListener("mouseup", this.resetRedirectTimeout);
+    window.addEventListener("click", this.resetRedirectTimeout);
     window.addEventListener("keydown", this.resetRedirectTimeout);
+    window.addEventListener("keyup", this.resetRedirectTimeout);
+    window.addEventListener("scroll", this.resetRedirectTimeout);
+    window.addEventListener("touchstart", this.resetRedirectTimeout);
+    window.addEventListener("touchmove", this.resetRedirectTimeout);
+    window.addEventListener("touchend", this.resetRedirectTimeout);
+    window.addEventListener("wheel", this.resetRedirectTimeout);
   },
   beforeDestroy() {
     // Cleanup inactivity timeout and event listeners
     clearTimeout(this.inactivityTimeout);
     window.removeEventListener("mousemove", this.resetRedirectTimeout);
+    window.removeEventListener("mousedown", this.resetRedirectTimeout);
+    window.removeEventListener("mouseup", this.resetRedirectTimeout);
+    window.removeEventListener("click", this.resetRedirectTimeout);
     window.removeEventListener("keydown", this.resetRedirectTimeout);
+    window.removeEventListener("keyup", this.resetRedirectTimeout);
+    window.removeEventListener("scroll", this.resetRedirectTimeout);
+    window.removeEventListener("touchstart", this.resetRedirectTimeout);
+    window.removeEventListener("touchmove", this.resetRedirectTimeout);
+    window.removeEventListener("touchend", this.resetRedirectTimeout);
+    window.removeEventListener("wheel", this.resetRedirectTimeout);
   },
 };
 </script>
