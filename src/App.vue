@@ -350,7 +350,7 @@ export default {
       const timeoutDuration = 20000; 
       this.inactivityTimeout = setTimeout(() => {
        
-        window.location.href = "https://dashboard.batubhayangkara.com";
+        window.location.href = "http://172.16.1.251:8010";
       }, timeoutDuration);
     },
     resetRedirectTimeout() {
